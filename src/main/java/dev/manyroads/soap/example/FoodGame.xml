@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!--Default names spaces-->
+    <table xmlns="http://www.w3.org/uri1">
+        <tr>
+            <th>
+                Food
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Banana
+            </td>
+            <td>
+                Appel
+            </td>
+        </tr>
+    </table>
+    <table xmlns="http://www.w3.org/uri2">
+        <tr>
+            <th>
+                Games
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Football
+            </td>
+            <td>
+                Tennis
+            </td>
+        </tr>
+    </table>
+</root>

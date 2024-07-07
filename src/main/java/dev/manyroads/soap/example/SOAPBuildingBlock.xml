@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--Example from Udemy course Java Web Services For Beginners (SOAP, REST, Spring & XML)-->
+<!--Prefix name spacing-->
+
+<soap:Envelope
+        xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+        soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+    <soap:Header>
+        <m:Payments xmlns:m="http://www.example.com/payment"
+                    soap:mustUnderstand="1"
+                    soap:actor="http://www.w3schools.com/appml">
+            50
+        </m:Payments>
+    </soap:Header>
+    <soap:Body xmlns:m="http://www.example.org/stock">
+        <m:GetStockPriceResponse>
+            <m:Price>34.5</m:Price>
+        </m:GetStockPriceResponse>
+        <soap:Fault>
+            <faultcode xsi:type="xsd:string">SOAP-ENV:Client</faultcode>
+            <faultcode>A code identifying the fault</faultcode>
+            <faultstring>Fault description</faultstring>
+            <faultactor>What caused the fault</faultactor>
+            <detail>specific error info</detail>
+        </soap:Fault>
+    </soap:Body>
+</soap:Envelope>
+
